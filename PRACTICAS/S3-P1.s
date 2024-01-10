@@ -1,5 +1,8 @@
 .text
 .globl main
+.data
+  array: .word 3, 4, 9, 8, 5, 1, 3
+  count: .word 6
 
 main:
   la $t0, array
@@ -20,6 +23,4 @@ end:
   addi $v0, $0, 10
   syscall
 
-.data
-  array: .word 3, 4, 9, 8, 5, 1, 3
-  count: .word 6
+
