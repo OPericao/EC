@@ -1,8 +1,9 @@
-.text
-.globl main
 .data
   array: .word 3, 4, 9, 8, 5, 1, 3
   count: .word 6
+
+.text
+.globl main
 
 main:
   la $t0, array
